@@ -1,0 +1,101 @@
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-asap {
+  font-family: 'Asap', sans-serif;
+}
+
+.brackground-blue {
+  background-color: #012639;
+}
+
+.blanco {
+  color: white;
+}
+
+.brackground-white {
+  background-color: white;
+}
+
+.background-grad {
+  background: #fcfcfc;
+  background: -webkit-gradient(linear, left top, right top, from(#fcfcfc), to(gainsboro));
+  background: linear-gradient(90deg, #fcfcfc 0%, gainsboro 100%);
+}
+
+h1 {
+  font-size: 5vw;
+  position: relative;
+  z-index: 100;
+  font-style: italic;
+  padding: 0 3rem;
+}
+
+.logo {
+  z-index: 100;
+}
+
+header {
+  background-image: url(Pool3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  position: relative;
+  z-index: 5;
+}
+
+header::before {
+  background-color: rgba(112, 105, 105, 0.3);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  content: '';
+  z-index: 10;
+}
+
+.content {
+  width: 75%;
+  margin-top: -8rem;
+  z-index: 100;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+footer {
+  padding: 0 10rem;
+}
+
+@media screen and (max-width: 576px) {
+  h1 {
+    font-size: 12vw;
+    margin-top: 6rem;
+  }
+  .content {
+    width: 100%;
+    margin-top: 0;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+  footer {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 576.1px) and (max-width: 1024px) {
+  h1 {
+    font-size: 9vw;
+    margin-top: 9rem;
+  }
+  .content {
+    width: 90%;
+    margin-top: -1rem;
+  }
+  footer {
+    padding: 1rem;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
